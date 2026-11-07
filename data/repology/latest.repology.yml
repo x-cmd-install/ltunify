@@ -1,29 +1,81 @@
-- repo: alpine_3_21
-  subrepo: community
+- repo: pureos_landing
+  subrepo: landing/main
   srcname: ltunify
-  binname: ltunify
+  binnames:
+    - ltunify
   visiblename: ltunify
   version: "0.3"
-  origversion: 0.3-r2
+  origversion: 0.3-1
   status: newest
-  summary: Logitech Unifying tool for Linux
   maintainers:
-    - alpine@ptrcnull.me
-  licenses:
-    - GPL-3.0-or-later
-- repo: alpine_3_22
-  subrepo: community
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - utils
+- repo: raspbian_oldstable
+  subrepo: main
   srcname: ltunify
-  binname: ltunify
+  binnames:
+    - ltunify
   visiblename: ltunify
   version: "0.3"
-  origversion: 0.3-r2
+  origversion: 0.3-1
   status: newest
-  summary: Logitech Unifying tool for Linux
   maintainers:
-    - alpine@ptrcnull.me
-  licenses:
-    - GPL-3.0-or-later
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - misc
+- repo: raspbian_stable
+  subrepo: main
+  srcname: ltunify
+  binnames:
+    - ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-1
+  status: newest
+  maintainers:
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - misc
+- repo: raspbian_testing
+  subrepo: main
+  srcname: ltunify
+  binnames:
+    - ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-1
+  status: newest
+  maintainers:
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - misc
+- repo: slackbuilds
+  srcname: misc/ltunify
+  visiblename: misc/ltunify
+  version: "0.3"
+  origversion: null
+  status: newest
+  categories:
+    - misc
+- repo: debian_12
+  subrepo: bookworm/main
+  srcname: ltunify
+  binnames:
+    - ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-1
+  status: newest
+  maintainers:
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - misc
 - repo: alpine_3_17
   subrepo: community
   srcname: ltunify
@@ -76,6 +128,32 @@
     - alpine@ptrcnull.me
   licenses:
     - GPL-3.0-or-later
+- repo: alpine_3_21
+  subrepo: community
+  srcname: ltunify
+  binname: ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-r2
+  status: newest
+  summary: Logitech Unifying tool for Linux
+  maintainers:
+    - alpine@ptrcnull.me
+  licenses:
+    - GPL-3.0-or-later
+- repo: alpine_3_22
+  subrepo: community
+  srcname: ltunify
+  binname: ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-r2
+  status: newest
+  summary: Logitech Unifying tool for Linux
+  maintainers:
+    - alpine@ptrcnull.me
+  licenses:
+    - GPL-3.0-or-later
 - repo: alpine_3_23
   subrepo: community
   srcname: ltunify
@@ -115,59 +193,59 @@
     - alpine@ptrcnull.me
   licenses:
     - GPL-3.0-or-later
-- repo: devuan_unstable
-  subrepo: unstable/main
+- repo: alpine_3_24
+  subrepo: community
+  srcname: ltunify
+  binname: ltunify-udev
+  visiblename: ltunify-udev
+  version: "0.3"
+  origversion: 0.3-r3
+  status: newest
+  summary: Logitech Unifying tool for Linux (udev rules)
+  maintainers:
+    - alpine@ptrcnull.me
+  licenses:
+    - GPL-3.0-or-later
+- repo: alpine_edge
+  subrepo: community
+  srcname: ltunify
+  binname: ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-r3
+  status: newest
+  summary: Logitech Unifying tool for Linux
+  maintainers:
+    - alpine@ptrcnull.me
+  licenses:
+    - GPL-3.0-or-later
+- repo: alpine_edge
+  subrepo: community
+  srcname: ltunify
+  binname: ltunify-udev
+  visiblename: ltunify-udev
+  version: "0.3"
+  origversion: 0.3-r3
+  status: newest
+  summary: Logitech Unifying tool for Linux (udev rules)
+  maintainers:
+    - alpine@ptrcnull.me
+  licenses:
+    - GPL-3.0-or-later
+- repo: fedora_41
+  subrepo: release
   srcname: ltunify
   binnames:
     - ltunify
   visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-1
-  status: newest
-  maintainers:
-    - anthony@acperkins.com
-    - stappers@debian.org
+  version: "0.1"
+  origversion: 0.1-24.fc41
+  status: outdated
+  summary: Command line utility for Logitech Unifying Receiver
+  licenses:
+    - GPLv3+
   categories:
-    - misc
-- repo: alpine_3_24
-  subrepo: community
-  srcname: ltunify
-  binname: ltunify-udev
-  visiblename: ltunify-udev
-  version: "0.3"
-  origversion: 0.3-r3
-  status: newest
-  summary: Logitech Unifying tool for Linux (udev rules)
-  maintainers:
-    - alpine@ptrcnull.me
-  licenses:
-    - GPL-3.0-or-later
-- repo: alpine_edge
-  subrepo: community
-  srcname: ltunify
-  binname: ltunify
-  visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-r3
-  status: newest
-  summary: Logitech Unifying tool for Linux
-  maintainers:
-    - alpine@ptrcnull.me
-  licenses:
-    - GPL-3.0-or-later
-- repo: alpine_edge
-  subrepo: community
-  srcname: ltunify
-  binname: ltunify-udev
-  visiblename: ltunify-udev
-  version: "0.3"
-  origversion: 0.3-r3
-  status: newest
-  summary: Logitech Unifying tool for Linux (udev rules)
-  maintainers:
-    - alpine@ptrcnull.me
-  licenses:
-    - GPL-3.0-or-later
+    - Unspecified
 - repo: alt_p11
   srcname: ltunify
   binnames:
@@ -238,20 +316,6 @@
     - stappers@debian.org
   categories:
     - misc
-- repo: debian_12
-  subrepo: bookworm/main
-  srcname: ltunify
-  binnames:
-    - ltunify
-  visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-1
-  status: newest
-  maintainers:
-    - anthony@acperkins.com
-    - stappers@debian.org
-  categories:
-    - misc
 - repo: debian_13
   subrepo: trixie/main
   srcname: ltunify
@@ -308,6 +372,20 @@
     - stappers@debian.org
   categories:
     - misc
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: ltunify
+  binnames:
+    - ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-1
+  status: newest
+  maintainers:
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - misc
 - repo: exherbo
   subrepo: heirecka
   srcname: input/ltunify
@@ -346,20 +424,6 @@
   visiblename: ltunify
   version: "0.1"
   origversion: 0.1-23.fc40
-  status: outdated
-  summary: Command line utility for Logitech Unifying Receiver
-  licenses:
-    - GPLv3+
-  categories:
-    - Unspecified
-- repo: fedora_41
-  subrepo: release
-  srcname: ltunify
-  binnames:
-    - ltunify
-  visiblename: ltunify
-  version: "0.1"
-  origversion: 0.1-24.fc41
   status: outdated
   summary: Command line utility for Logitech Unifying Receiver
   licenses:
@@ -561,70 +625,6 @@
     - stappers@debian.org
   categories:
     - utils
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: ltunify
-  binnames:
-    - ltunify
-  visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-1
-  status: newest
-  maintainers:
-    - anthony@acperkins.com
-    - stappers@debian.org
-  categories:
-    - utils
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: ltunify
-  binnames:
-    - ltunify
-  visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-1
-  status: newest
-  maintainers:
-    - anthony@acperkins.com
-    - stappers@debian.org
-  categories:
-    - misc
-- repo: raspbian_stable
-  subrepo: main
-  srcname: ltunify
-  binnames:
-    - ltunify
-  visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-1
-  status: newest
-  maintainers:
-    - anthony@acperkins.com
-    - stappers@debian.org
-  categories:
-    - misc
-- repo: raspbian_testing
-  subrepo: main
-  srcname: ltunify
-  binnames:
-    - ltunify
-  visiblename: ltunify
-  version: "0.3"
-  origversion: 0.3-1
-  status: newest
-  maintainers:
-    - anthony@acperkins.com
-    - stappers@debian.org
-  categories:
-    - misc
-- repo: slackbuilds
-  srcname: misc/ltunify
-  visiblename: misc/ltunify
-  version: "0.3"
-  origversion: null
-  status: newest
-  categories:
-    - misc
 - repo: ubuntu_22_04
   subrepo: jammy/universe
   srcname: ltunify
@@ -697,6 +697,20 @@
     - universe/misc
 - repo: ubuntu_26_10
   subrepo: stonking/universe
+  srcname: ltunify
+  binnames:
+    - ltunify
+  visiblename: ltunify
+  version: "0.3"
+  origversion: 0.3-1build1
+  status: newest
+  maintainers:
+    - anthony@acperkins.com
+    - stappers@debian.org
+  categories:
+    - universe/misc
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
   srcname: ltunify
   binnames:
     - ltunify
